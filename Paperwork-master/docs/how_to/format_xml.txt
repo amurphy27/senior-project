@@ -1,0 +1,73 @@
+How To Format The XML
+
+Below is a basic skeleton of what would make up the XML, it is pretty simple since a form is essentially just
+a title and a bunch of fields.
+
+<form name= form_type >
+	<field name= field_name  type= field_type  x= field_x_position  y= field_y_position  width= field_width  height= field_height ></field>
+	more fields
+</form>
+
+The naming convention of the .xml files doesn't infulence anything so that part is completely up to you.
+
+=== form_type ===
+form_type unlike the name of the .xml file will dictate a lot of different things however. First off it will dictate the name of the form as
+it appears on the website. More importantly though for everything to work the .jpg and .pdf files for this form will need to be form_type.jpg.
+
+=== field_name ===
+field_name will be the name that this field appears as in the database for readability nothing else.
+
+=== field_type ===
+field_type is the type of html input a field will be.
+For example most fields are text since most fields are written in answers.
+Other types would be checkbox for all checkbox and bubble selections,
+date and datetime for selecting dates and dates + times respectively,
+as well as our own special case signature for all signatures/initials needed.
+Theoretically you could use any other input type offered by html but some would run into goofy cases like radio since radios are based on families
+and we do not have the javascript implemented to deal with said families so the values going into the database would be a lil off.
+
+
+This is where creating the xml gets tedious and annoying in all honesty. Notably due to the fact that you need to get measurements for every field
+which just takes time. To help save some time and make sure everything fits and lines up correctly on the website and the pdfs created I made
+seperate instructions entitled setup_files_for_forms.txt.
+
+=== field_x_position ===
+This is the distance from the left side of the page to the top left corner of the part of the field you want the input.
+Positions can go out one decimal point. (00.x)
+Below is an example since I know I am hard to understand though writing.
+Where the ' is, is about where you want this measurement to be, probably a lil higher, up to whomever is making the xml.
+My recomendation however is that you make the input as big as it possibly can while fitting in the box for readability and ease of use for the user.
+
++------------------------------------------------------+
+|Full Name: '                                          |
++------------------------------------------------------+
+
+The fun part is the measurement is in mm (millimeters), not px (pixels). More info will be in the previously mentioned setup instructions.
+
+=== field_y_position ===
+Similar to the x position but this is from the top edge of the FIRST page to the top left corner of the part of the field you want the input.
+Positions can go out one decimal point. (00.x)
+Same spot as the previously shown example above.
+As mentioned the y position is the distance from the first page of the document. To make things easier a page is 279.4 mm tall. So if you are measuring
+a page at a time just add 279.4 * the number of pages past the first one to get an accurate y position.
+
+=== field_width ===
+The field width is the width of the field input. Like with previous attributes to the field I provided an example below.
+Width only stores whole numbers. If you put a decimal in the xml it will either drop the decimal or round, either way it technically will still work but not
+include the decimals.
+The important part is still represented by a bunch of '
+Measurement should still be in mm.
+
++------------------------------------------------------+
+|Full Name: '''''''''''''''''''''''''''''''''''''''''' |
++------------------------------------------------------+
+
+=== field_height ===
+Once a again similar to the width it is the distance from the top of the input to the bottom of it, still in mm.
+Just like the width, the height only stores whole numbers.
+Show by ' to .
+
++------------------------------------------------------+
+|Full Name: '                                          |
+|           .                                          |
++------------------------------------------------------+

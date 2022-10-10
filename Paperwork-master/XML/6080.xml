@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<form name="6080">
+    <field name="CadetName" type="text" x="32" y="56" width="48" height="5"></field>
+    <field name="CadetGrade" type="text" x="101" y="56" width="45" height="5"></field>
+    <field name="CAPID" type="text" x="159" y="56" width="42" height="5"></field>
+    <field name="UnitCharterNumber" type="text" x="43" y="61" width="36" height="5"></field>
+    <field name="ActivityName" type="text" x="103" y="61" width="43" height="5"></field>
+    <field name="ActivityDate" type="date" x="167" y="61" width="33" height="5"></field>
+    
+    <field name="GradeAndNameOfSupervisingSenior" type="text" x="65" y="83" width="39" height="5"></field>
+    <field name="SupervisingSeniorInitial" type="text" x="183" y="83" width="18" height="5"></field>
+
+    <field name="Parent/Guardian Name" type="text" x="38" y="104" width="43" height="5"></field>
+    <field name="RelationshipToCadet" type="text" x="102" y="104" width="44" height="5"></field>
+    <field name="ContactNumberOnDateOfActivity" type="text" x="176" y="104" width="27" height="5"></field>
+
+    <field name="CAPF31" type="checkbox" x="16.3" y="126.1" width="3" height="3"></field>
+    <field name="other" type="checkbox" x="108" y="126.1" width="3" height="3"></field>
+    <field name="CAPF160" type="checkbox" x="16.3" y="131.5" width="3" height="3"></field>
+    <field name="CAPF163" type="checkbox" x="16.3" y="137" width="3" height="3"></field>
+
+    <field name="Parent/GuardianSignature" type="signature" x="82" y="157" width="63" height="10"></field>
+    <field name="Parent/GuardianSignatureDate" type="date" x="157" y="157" width="44" height="10"></field>
+
+    <field name="ActivityName" type="text" x="35" y="204" width="81" height="5"></field>
+    <field name="ActivityDateTime" type="datetime-local" x="149" y="204" width="53" height="5"></field>
+    <field name="ActivityLocation" type="text" x="38" y="209.5" width="78" height="5"></field>
+    <field name="ActivityFormatClassTourLight" type="checkbox" x="135.7" y="210" width="3" height="3"></field>
+    <field name="ActivityFormatBackcountry" type="checkbox" x="174.4" y="211.8" width="3" height="3"></field>
+    <field name="ActivityFormatPhysical" type="checkbox" x="142.6" y="214.2" width="3" height="3"></field>
+    <field name="ActivityFormatFlying" type="checkbox" x="174.5" y="216" width="3" height="3"></field>
+    <field name="ParticipationFee" type="text" x="38" y="215.5" width="26" height="5"></field>
+    <field name="PaymentDue" type="text" x="87" y="215.5" width="29" height="5"></field>
+    <field name="TransportationYes" type="checkbox" x="50.1" y="222.6" width="3" height="3"></field>
+    <field name="TransportationNo" type="checkbox" x="62.4" y="222.6" width="3" height="3"></field>
+    <field name="TransportationExtraFee" type="text" x="88" y="221.3" width="30" height="5"></field>
+    <field name="TransportationRallyPoint" type="text" x="156" y="221.3" width="43" height="5"></field>
+    <field name="HighAdventureYes" type="checkbox" x="42.3" y="227.7" width="3" height="3"></field>
+    <field name="HighAdventureNo" type="checkbox" x="54.5" y="227.7" width="3" height="3"></field>
+    <field name="HighAdventureExplain" type="text" x="35" y="233" width="82" height="7"></field>
+    <field name="CAPPointOfContactName" type="text" x="158" y="226.7" width="43" height="5"></field>
+    <field name="SupervisingStaffMenOnly" type="checkbox" x="119.3" y="236.4" width="3" height="3"></field>
+    <field name="SupervisingStaffWomenOnly" type="checkbox" x="142.6" y="236.4" width="3" height="3"></field>
+    <field name="SupervisingStaffMenAndWomen" type="checkbox" x="169.7" y="236.4" width="3" height="3"></field>
+    <field name="MealsProvided" type="checkbox" x="27.2" y="241.4" width="3" height="3"></field>
+    <field name="MealsBringOwnFood" type="checkbox" x="46.5" y="241.4" width="3" height="3"></field>
+    <field name="MealsBringMoney" type="checkbox" x="74.6" y="241.4" width="3" height="3"></field>
+    <field name="EmergencyPhone" type="text" x="145" y="241" width="57" height="4"></field>
+    <field name="EquipmentNeededSeeWebsiteOrFlier" type="checkbox" x="46.2" y="247" width="3" height="3"></field>
+    <field name="EquipmentNeeded" type="text" x="15" y="251" width="100" height="10"></field>
+    <field name="ActivityWebsite" type="text" x="142" y="246" width="60" height="5"></field>
+    <field name="EstimatedTimeReturning" type="text" x="120" y="256" width="81" height="5"></field>
+</form>

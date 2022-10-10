@@ -1,0 +1,42 @@
+How To Add More XML And Change Forms In Use
+Its simple. Go into XMLParser.php and change the filename to the xml you want to parse and send to the database.
+Make sure the xml file you want to use is in the XML directory and the names match up and everything.
+Then just go to pcr-wa-015.org/paper/XMLParser.php
+If it worked it will say Connected Successfully.
+Otherwise it didn't work.
+Just a view little caviots to this process...
+If you want to change an existing form, you would have to delete the old templatefields from the database first since duplicates are
+not allowed. This IS NOT reccomended since all old forms that use the old template would also need to be deleted from the database,
+otherwise lots of errors would be popping up when they are opened in the future.
+To get arround this my recommendation would be to name the title in the new xml slightly differently like 6080_v1 or something
+like that so the old versions will still be accessable.
+Once a new template is made you then need to update the chooseForm.php to add another link or update the old existing one.
+In the case of changing an existing one simply change the existing hidden input value for formName (below example for 6080)
+<input type="hidden" name="formName" value="6080">
+to the new desired form template. (example below if we are changing it to 6080_v1)
+<input type="hidden" name="formName" value="6080_v1">
+THIS WILL ONLY CHANGE THE TEMPLATE USED FOR THE BUTTON
+If you want to change the name displayed on the button change the value on the submit input. (example below)
+<input id="newFormButton" type="submit" value="THIS VALUE">
+Just make sure it is in the same form block as the one you are trying to change.
+Alternatively if you want to add an entirely new form to the chooseForm.php page simply copy the below code, put in the desired
+values and place it after line 78
+<div class="overview-boxes">
+but before the closing of this div tag. (</div>) at this time line 115
+Also make sure that you that the code below is not placed within another div block they will have the class box. The parent block
+should be the previously mentioned div with the class overview-boxes.
+Only 2 things to change are TITLE_IN_XML which should match the title given in the xml file you want this button to link to.
+And DISPLAY_NAME which will be the name seen by users on the webpage.
+--- CODE TO USE BELOW ---
+<div class="box">
+    <div class="right-side">
+    <div class="box-topic">
+        <form action="EditForm.php" method="post">
+        <input type="hidden" name="formName" value="TITLE_IN_XML">
+        <!--new form-->
+        <input type="hidden" name="formState" value="newForm"> 
+        <input id="newFormButton" type="submit" value="DISPLAY_NAME">
+        </form>
+    </div>
+    </div>
+</div>

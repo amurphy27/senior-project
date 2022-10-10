@@ -1,0 +1,15 @@
+This document will cover the best way I have found to get all the files setup up so everything lines up properly.
+First begin with your desired pdf and make sure it's name lines up with the title in the xml file. (title.pdf)
+If the pdf is editable with the special adobe stuff. Flatten it to remove the editable stuff. Plenty of online tools for this.
+Next convert the pdf to a jpg. 
+If the pdf has multiple pages most tools I have came across will give you a zip of multiple jpgs. One for each page. Combine
+all of these jpgs together in order so you get one very tall jpg. Once again plenty of online tools for this. The very tall
+jpg is the one we are going to want to use. Similarly to the pdf, name it to line up with the title in the xml file. (title.jpg)
+
+To help with find the measurements needed for the width, height, x and y coords I personally used gimp since it has an option
+to display coordinates in mm rather than pixels like most other tools that look at coordinates of images.
+Now you can either use the jpg or the pdf to get the measurements but I recommend using the pdf since it is the original and
+should be the golden standard.
+
+As a way to double check that you are have a correctly sized image (pdf or jpg being viewed) make sure that the width of a page is
+215.9mm and the height is 279.4mm.
